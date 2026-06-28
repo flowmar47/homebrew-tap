@@ -2,11 +2,11 @@ cask "matadoor" do
   version "1.1.0"
   sha256 "c7b8859fa6343428bf3ef1ac703446a9a82009c52cae39507e1f94c834c958ef"
 
-  url "https://ohmslaw.net/downloads/MatadorHost-#{version}.dmg",
-      verified: "ohmslaw.net/"
+  url "https://matador.dev/downloads/MatadorHost-#{version}.dmg",
+      verified: "matador.dev/"
   name "Matadoor Host"
   desc "Menu-bar host for the Matadoor remote dev environment"
-  homepage "https://ohmslaw.net/apps/matadoor"
+  homepage "https://matador.dev"
 
   depends_on macos: ">= :tahoe"
   depends_on arch: :arm64
