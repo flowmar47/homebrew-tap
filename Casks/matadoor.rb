@@ -1,6 +1,6 @@
 cask "matadoor" do
   version "1.1.0"
-  sha256 "fe12a5c728ebd4b429af0bf49baa24db2c850e3d7421773551d0295d81272d5c"
+  sha256 "f02d014dc4e082a209a03a3e73e20c82b7140c73c8d66be12901bd63d24cf22f"
 
   url "https://ohmslaw.net/downloads/MatadorHost-#{version}.dmg",
       verified: "ohmslaw.net/"
