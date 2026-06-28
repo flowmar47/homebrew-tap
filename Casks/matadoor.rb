@@ -8,7 +8,7 @@ cask "matadoor" do
   desc "Menu-bar host for the Matadoor remote dev environment"
   homepage "https://matador.dev"
 
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
   depends_on arch: :arm64
 
   app "Matadoor Host.app"
