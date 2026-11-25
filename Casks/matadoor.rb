@@ -3,7 +3,7 @@ cask "matadoor" do
   sha256 "3b4751f728d28df149cfb40ab5a84e2913d50a506087ec690a5904496a7abf0a"
 
   url "https://ohmslaw.net/downloads/MatadorHost-#{version}.dmg"
-  name "Matador Host"
+  name "Matadoor Host"
   desc "Menu-bar host for the Matadoor remote dev environment"
   homepage "https://ohmslaw.net/apps/matador"
 
@@ -15,7 +15,7 @@ cask "matadoor" do
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
-  app "Matador Host.app"
+  app "Matadoor Host.app"
 
   uninstall launchctl: "dev.matador.host",
             quit:      "dev.matador.host"

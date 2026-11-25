@@ -6,7 +6,7 @@ Official Homebrew tap for direct-download [Silo Systems](https://ohmslaw.net) ma
 
 | Cask | App | Description | Requirements |
 |---|---|---|---|
-| `matadoor` | Matador Host | Menu-bar host for the [Matadoor](https://ohmslaw.net/apps/matador) remote dev environment | Apple Silicon (`arm64`), macOS 26 (Tahoe) or later |
+| `matadoor` | Matadoor Host | Menu-bar host for the [Matadoor](https://ohmslaw.net/apps/matador) remote dev environment | Apple Silicon (`arm64`), macOS 26 (Tahoe) or later |
 
 ## Install
 
