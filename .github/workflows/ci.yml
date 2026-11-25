@@ -14,12 +14,13 @@ jobs:
       - name: Checkout tap
         uses: actions/checkout@v4
 
-      - name: Link tap into Homebrew
+      - name: Link and trust tap in Homebrew
         run: |
           TAP_DIR="$(brew --repository)/Library/Taps/flowmar47/homebrew-tap"
           mkdir -p "$(dirname "$TAP_DIR")"
           rm -rf "$TAP_DIR"
           ln -s "$GITHUB_WORKSPACE" "$TAP_DIR"
+          brew trust flowmar47/tap
 
       - name: Style check
         run: brew style flowmar47/tap
