@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: macos-15
+    steps:
+      - name: Checkout tap
+        uses: actions/checkout@v4
+
+      - name: Link tap into Homebrew
+        run: |
+          TAP_DIR="$(brew --repository)/Library/Taps/flowmar47/homebrew-tap"
+          mkdir -p "$(dirname "$TAP_DIR")"
+          rm -rf "$TAP_DIR"
+          ln -s "$GITHUB_WORKSPACE" "$TAP_DIR"
+
+      - name: Style check
+        run: brew style flowmar47/tap
+
+      - name: Strict online cask audit
+        run: brew audit --cask --strict --online flowmar47/tap/matadoor
+
+      - name: Livecheck
+        run: brew livecheck --cask flowmar47/tap/matadoor

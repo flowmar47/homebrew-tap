@@ -1,3 +1,11 @@
+# homebrew-tap Guidelines
+
+## Cask Release Verification
+When bumping `Casks/matadoor.rb` (or adding new direct-download casks):
+- Preserve the exact notarized DMG `version` and `sha256` published on `ohmslaw.net`.
+- Keep `depends_on arch: :arm64` followed by `depends_on macos: :tahoe` (or current minimum), `livecheck` pointing at `https://ohmslaw.net/apps/matador/download`, `uninstall`, and alphabetically sorted `zap trash:`.
+- Run `brew style`, `brew audit --cask --strict --online`, and `brew livecheck --cask` before pushing.
+
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
