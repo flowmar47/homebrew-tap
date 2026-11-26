@@ -1,5 +1,7 @@
 # homebrew-tap
 
+[![CI](https://github.com/flowmar47/homebrew-tap/actions/workflows/ci.yml/badge.svg)](https://github.com/flowmar47/homebrew-tap/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Official Homebrew tap for direct-download [Silo Systems](https://ohmslaw.net) macOS apps.
 
 ## Casks
